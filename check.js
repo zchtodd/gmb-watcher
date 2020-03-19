@@ -3,7 +3,7 @@ const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 
 puppeteer.use(StealthPlugin());
 
-const proxyUrl = "http://us.smartproxy.com:10000";
+const proxyUrl = "YOUR_PROXY_PROVIDER_URL_HERE";
 
 async function crawl(browser) {
     const page = await browser.newPage();
